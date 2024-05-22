@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Login - SB Admin</title>
+        <link rel="stylesheet" href="{% static 'css/styles.css' %}"/>
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    </head>
+
+    {% if user.is_authenticated %}
+    {% block content %}
+    {% endblock %}
+    {% else %}
+
+    <div class="container">
+      <br>
+      <p class="lead">Welcome to mining digital prototypes sandbox.</p>
+      <p class="lead">Please login to access the system.</p>
+      <a href="{% url '' %}"><button class="btn btn-primary" type="submit">Login</button></a>
+      <br>
+    </div>
+    {% endif %}
+</html>
