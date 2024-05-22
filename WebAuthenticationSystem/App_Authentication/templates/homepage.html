@@ -1,0 +1,9 @@
+{% extends 'partials/base.html' %}
+{% load static %}
+{% block content %}
+{% if user.is_authenticated %}
+<br>
+{% else %}
+{% include 'partials/base_denied_access.html' %}
+{% endif %}
+{% endblock %}
