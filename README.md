@@ -18,16 +18,13 @@ A simple Django application for user authentication, providing features such as 
 
 1. Clone the repository
 2. Create a virtual environment:
-
-bash
-Copy code
 python -m venv venv
 source venv/bin/activate  # On Windows use `venv\Scripts\activate`
-Install the required packages:
 
+3. Install the required packages:
 pip install -r requirements.txt
-Run migrations:
 
+4. Run migrations:
 python manage.py migrate
 
 ## Usage
