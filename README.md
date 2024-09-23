@@ -27,7 +27,7 @@ pip install -r requirements.txt
 4. Run migrations:
 python manage.py migrate
 
-```markdown
+
 5. **Configure SMTP para email functionality:**
 
    Para habilitar a funcionalidade de redefinição de senha, você precisará configurar as configurações de SMTP. Aqui está como configurá-las usando o Gmail:
@@ -42,7 +42,7 @@ python manage.py migrate
    - Copie essa senha, pois você precisará dela para suas configurações do Django.
 
    Em seguida, atualize seu `settings.py` com as seguintes configurações de email:
-
+```markdown
    ```python
    EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
    EMAIL_HOST = 'smtp.gmail.com'
