@@ -120,7 +120,7 @@ celerybeat.pid
 *.sage.py
 
 # Environments
-finance_platform/.env
+web_auth_system/.env
 .solution_manager_venv
 env/
 venv/
