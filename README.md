@@ -1,2 +1,2 @@
-# Web-Authentication-System
-Web Authentication System Template developed with Django.
+# finance_platform
+Finance Platform for Investment Managements
